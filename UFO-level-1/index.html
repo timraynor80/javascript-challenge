@@ -2,38 +2,65 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>UFO Finder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-  <script src="static/data.js"></script>
-  <script src="static/app.js"></script>
+    <meta charset="utf-8">
+    <title>UFO Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="static/data.js"></script>
+    <script src="static/app.js"></script>
 </head>
 
-<body class="d-flex flex-column h-100">
+<body>
 
-    <div class="container-fluid">
+    <div class="container">   
         <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand mx-auto" href="#">
                 <span class="text-muted">UFO Finder</span>
             </a>
         </nav>
     </div>
 
-    <div class="container-fluid">
-        FILTER ELEMENT
-    </div>
-
-    <div class="container-fluid">
-        TABLE
-    </div>
-
-    <div class="container-fluid">   
-        <footer class="footer fixed-bottom py-3">
-            <div class="container">
-              <span class="text-muted">Don't Let Them Tell You You're Crazy!!!</span>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+            <form>
+                <div class="form-group">
+                <ul class="list-group" id="filters">
+                    <li class="filter list-group-item">
+                    <label for="date">Enter a Date Below To See That Day's UFO Sightings</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                    </li>
+                </ul>
+                </div>
+                <button id="filter-btn" type="button" class="btn btn-default">Click Here To See Your Results</button>
+            </form>
             </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+                <thead>
+                <tr>
+                    <th class="table-head">Date</th>
+                    <th class="table-head">City</th>
+                    <th class="table-head">State</th>
+                    <th class="table-head">Country</th>
+                    <th class="table-head">Shape</th>
+                    <th class="table-head">Duration</th>
+                    <th class="table-head">Comments</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">    
+        <footer class="footer fixed-bottom py-3">
+            <span class="text-muted">Don't Let Them Tell You You're Crazy!!!</span>
         </footer>
     </div>
 

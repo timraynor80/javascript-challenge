@@ -7,6 +7,7 @@ footer {
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
+    text-align: center;
 }
 
 .navbar {
@@ -17,4 +18,31 @@ footer {
 
 .navbar-brand {
     font-size: 2em;
+    float: none;
+}
+
+.filter {
+    background-color: silver;
+    color: #4d5887;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.form-control { 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.panel-body {
+    text-align: center;
+}
+
+.btn {
+    color: silver;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+    text-decoration: underline;
 }
